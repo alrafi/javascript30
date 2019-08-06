@@ -19,3 +19,8 @@ I have just learned how to interact with DOM with querySelector, how to handle k
 On this challenge, I just learned how to animate an element with transform and transition property on CSS. With javascript, we made the clock rotate realtime based on time right now. We also use setInterval() to make our function run every second. Love this course and still curious with all the rest of the challenges.
 
 **Live demo**: please check the clock [here](https://alrafi.github.io/javascript30/Day%2002%20-%20JS%20Clock/).
+
+### Day 03: Jul 21, 2019
+On this project, I have learned how to use CSS variables and how to modify these variables with javascript. Besides that, I also learned how to use input type range and color in our HTML input. So cool!
+
+**Live demo**: explore the [CSS Variables here](https://alrafi.github.io/javascript30/Day%2003%20-%20CSS%20Variables/).
