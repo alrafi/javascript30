@@ -24,3 +24,14 @@ On this challenge, I just learned how to animate an element with transform and t
 On this project, I have learned how to use CSS variables and how to modify these variables with javascript. Besides that, I also learned how to use input type range and color in our HTML input. So cool!
 
 **Live demo**: explore the [CSS Variables here](https://alrafi.github.io/javascript30/Day%2003%20-%20CSS%20Variables/).
+
+### Day 04: Jul 27, 2019
+I have just learned about ES6 concept on Cardio Practice project.
+
+📍First was .map concept. Map was used to do a specific operation on all elements of an array and it will return a modified array of result of that operation. Map takes three parameters; first parameter was element itself, second was the index of element, and third was the array. Only first parameter was mandatory, the second and third was optional.
+
+⏳Next was .filter concept. Filter was used to filter the whole array based on some condition. Each element will be checked by that condition. If it pass, it will be kept on the array.
+
+🎯 The third I learned was .reduce concept. Reduce was used to aggregate all the elements of an array and return a single value. Reduce takes a function with four parameters and also a additional element as the intial value of container. The first parameter was the container of the single value, then the second, third and fourth parameter were same as filter and map.
+
+🗃️ The last one was .sort concept. Like the name, sort will return the array (like initial data but sorted).
