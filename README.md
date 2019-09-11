@@ -28,10 +28,19 @@ On this project, I have learned how to use CSS variables and how to modify these
 ### Day 04: Jul 27, 2019
 I have just learned about ES6 concept on Cardio Practice project.
 
-📍First was .map concept. Map was used to do a specific operation on all elements of an array and it will return a modified array of result of that operation. Map takes three parameters; first parameter was element itself, second was the index of element, and third was the array. Only first parameter was mandatory, the second and third was optional.
+📍 First was .map concept. Map was used to do a specific operation on all elements of an array and it will return a modified array of result of that operation. Map takes three parameters; first parameter was element itself, second was the index of element, and third was the array. Only first parameter was mandatory, the second and third was optional.
 
-⏳Next was .filter concept. Filter was used to filter the whole array based on some condition. Each element will be checked by that condition. If it pass, it will be kept on the array.
+⏳ Next was .filter concept. Filter was used to filter the whole array based on some condition. Each element will be checked by that condition. If it pass, it will be kept on the array.
 
 🎯 The third I learned was .reduce concept. Reduce was used to aggregate all the elements of an array and return a single value. Reduce takes a function with four parameters and also a additional element as the intial value of container. The first parameter was the container of the single value, then the second, third and fourth parameter were same as filter and map.
 
 🗃️ The last one was .sort concept. Like the name, sort will return the array (like initial data but sorted).
+
+### Day 05: Sep 11, 2019
+🦄 In this section, I learned about using flexbox to create image gallery. The flex box is very nice to use if we want to make the layout of our web pages to be tidier and easier to divide the parts. To use flexbox, we have to use display: flex; on the container of the elements that we want to apply flexbox.
+
+🖼️ In addition, the image gallery is also used CSS attributes like transform and transition to create animation from our photo gallery. In javascript, we create two functions namely toggleOpen and toggleAktif to add open and open-active class to our CSS.
+
+🔧 But in this project there are still a few features that can still be applied, that is when we open one image it should automatically close another image. On this time, I haven't had the chance to implement it. I hope I will add it soon.
+
+**Live demo**: have fun with [JS Image Gallery](https://alrafi.github.io/javascript30/Day%2005%20-%20Javascript%20Image%20Gallery/).
