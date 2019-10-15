@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p onclick="makeGreen()">xAlrafixTimes</p>
+    <script>
+      const dogs = [{ name: 'Snickers', age: 2 }, { name: 'Hugo', age: 8 }];
+
+      const p = document.querySelector('p');
+
+      function makeGreen() {
+        p.style.color = '#BADA55';
+        p.style.fontSize = '50px';
+      }
+
+      // clearing
+      console.clear();
+
+      // regular
+      console.log('hello world');
+
+      // interpolated
+      console.log('Hello I am a %s string!', '💩');
+
+      // styled
+      console.log('%c I am some great text', 'font-size:20px; color:orange;');
+
+      // warning
+      console.warn('OH NOO');
+
+      // error
+      console.error('Shit!!');
+
+      // info
+      console.info('crocodiles eat 4-5 people per year');
+
+      // testing
+      console.assert(1 === '1', 'that is wrong');
+
+      // viewing DOM elements
+      console.log(p);
+      console.dir(p);
+
+      // grouping together
+      dogs.forEach(dog => {
+        // console.group(`${dog.name}`);
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`This is ${dog.name}`);
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.groupEnd(`${dog.name}`);
+      });
+
+      // counting
+      console.count('hello');
+      console.count('hello');
+      console.count('hello');
+      console.count('bye');
+      console.count('hello');
+      console.count('bye');
+      console.count('bye');
+
+      // timing
+      console.time('fetching data from api');
+      fetch('https://api.github.com/users/alrafi')
+        .then(data => data.json())
+        .then(data => {
+          console.timeEnd('fetching data from api');
+          console.log(data);
+        });
+    </script>
+  </body>
+</html>
