@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>#Day12 - Key Sequence Detecting</title>
+  </head>
+  <body>
+    <script>
+      const pressed = [];
+      const secretCode = 'alrafi';
+
+      window.addEventListener('keyup', e => {
+        pressed.push(e.key);
+        pressed.splice(
+          -secretCode.length - 1,
+          pressed.length - secretCode.length
+        );
+        console.log(pressed);
+        if (pressed.join('').includes(secretCode)) {
+          console.log('BOOOM');
+          cornify_add();
+        }
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://www.cornify.com/js/cornify.js"
+    ></script>
+  </body>
+</html>
