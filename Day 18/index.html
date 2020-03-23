@@ -181,6 +181,25 @@
         Video 58
       </li>
     </ul>
-    <script></script>
+    <script>
+      const times = Array.from(document.querySelectorAll('[data-time'));
+
+      const seconds = times
+        .map(item => item.dataset.time)
+        .map(timeItem => {
+          const [mins, secs] = timeItem.split(':').map(parseFloat);
+          return mins * 60 + secs;
+        })
+        .reduce((total, vidSecs) => total + vidSecs);
+
+      let secLeft = seconds;
+      const hour = Math.floor(secLeft / 3600);
+      secLeft = secLeft % 3600;
+
+      const min = Math.floor(secLeft / 60);
+      secLeft = secLeft % 60;
+
+      console.log(`Video duration: ${hour}:${min}:${secLeft}`);
+    </script>
   </body>
 </html>
